@@ -1,0 +1,22 @@
+<Lecture>
+    <Subject>
+        <Name>Database</Name>
+        <UnitCode>COMS20700</UnitCode>
+        <DepartmentName>COMS</DepartmentName>
+    </Subject>
+    <Instance>
+        <Week>1,2,3,4,5,6</Week>
+        <Day>Monday</Day>
+        <TimeSlot>4</TimeSlot>
+        <Place>
+            <Room>1.40 Pugsley Lecture Theatre</Room>
+            <Building>Queen's Building</Building>
+            <Department>COMS</Department>
+        <Place>
+        <Lecturer>
+             <Name>Steve</Name>
+        </Lecturer>
+    </Instance>
+</Lecture>
+
+

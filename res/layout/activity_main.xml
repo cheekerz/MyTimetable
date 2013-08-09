@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+   	android:layout_height="match_parent"
+   	android:orientation="vertical" >
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/nextLectureTitle"
+            style="@style/TitleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dp" />
+
+        <include
+            android:id="@+id/nextLectureTimeSlot"
+            layout="@layout/timeslot" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/timetableButton"
+                style="@style/BigButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/secondary_bg_selector"
+                android:gravity="center"
+                android:onClick="startDaySelector"
+                android:text="@string/Timetable" />
+
+            <Button
+                style="@style/BigButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/darkgrey_bg_selector"
+                android:gravity="center"
+                android:onClick="startBlackboard"
+                android:text="@string/Blackboard" />
+
+            <Button
+                style="@style/BigButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/tertiary_bg_selector"
+                android:gravity="center"
+                android:onClick="startProgress"
+                android:text="@string/Progress" />
+            
+            <Button
+                style="@style/BigButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/bg_selector_4"
+                android:gravity="center"
+                android:onClick="startNotes"
+                android:text="@string/Notes" />
+
+            <Button
+                style="@style/BigButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/primary_bg_selector"
+                android:gravity="center"
+                android:onClick="startRSSReader"
+                android:text="@string/News" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_news_frag_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_scheme1" />
+
+</LinearLayout>

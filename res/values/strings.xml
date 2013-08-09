@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyTimetable</string>
+    <string name="menu_email">Compose Mail</string>
+    <string name="menu_settings">Settings</string>
+    <string name="Timetable">Timetable</string>
+    <string name="Time">Time</string>
+    <string name="Subject">Subject</string>
+    <string name="Location">Location</string>
+    <string name="LongLocation">Long Location</string>
+    <string name="CreateLecture">Lecture</string>
+    <string name="NewLecture">Create Lecture</string>
+    <string name="Edit">Edit</string>
+    <string name="MoreDetails">More Details</string>
+    <string name="ResetTimetable">Reset Timetable</string>
+    <string name="ResetTimetableConfirm">This will wipe the current timetable removing all edits and import lectures associated with your university timetable</string>
+    <string name="Delete">Delete</string>
+    <string name="Saved">Saved</string>
+    <string name="Save">Save</string>
+    <string name="Restore">Restore</string>
+    <string name="UnitCode">Unit Code:</string>
+    <string name="Name">Name:</string>
+    <string name="Address">Address:</string>
+    <string name="Type">Type:</string>
+    <string name="Duration">Duration:</string>
+    <string name="ShortAddress">Short Address:</string>
+    <string name="Room">Room:</string>
+    <string name="LectureNameHint">Title of the unit</string>
+    <string name="LectureUnitCodeHint">e.g. COMS20805</string>
+    <string name="LectureTypeHint">e.g. Lab, Lecture, Tutorial etc</string>
+    <string name="LectureShortAddressHint">Abbreviated address e.g. CHEM BLG LT2</string>
+    <string name="LectureAddressHint">Room,\nBuilding,\nPostcode</string>
+    <string name="LectureAddressHint1">Room</string>
+    <string name="LectureAddressHint2">Building</string>
+    <string name="LectureAddressHint3">Postcode</string>
+    <string name="AttendanceStats">Attendance Stats:</string>
+    <string name="title_activity_day_calendar">DayCalendarActivity</string>
+    <string name="News">News</string>
+    <string name="NextLectureOn">&quot;Next Lecture On &quot;</string>
+    <string name="EndOfLectures">End of this years lectures</string>
+    <string name="Contacts">Contacts</string>
+    <string name="Blackboard">Blackboard</string>
+    <string name="DialogDeleteLecture">Are you sure you want to delete this lecture?</string>
+    <string name="DialogDeleteMultipleLecture">There are multiple instances of this event, which do you want to delete?</string>
+    <string name="DialogRestoreLecture">Would you like to restore to original?</string>
+    <string name="DialogSaveLecture">There are multiple instances of this event, which do you want to apply the changes to?</string>
+    <string name="DialogEditWarning">Warning:\nEditing imported lectures will disassociate them with the original lecture meaning any updates made by the university will no longer be reflected</string>
+    <string name="DialogApplyToAll">All instances</string>
+    <string name="DialogApplyToOne">Just this one</string>
+    <string name="DialogBlackboard">The Blackboard application Learn is not installed on this device, would you like to download it?</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Ok">OK</string>
+    <string name="DateOutOfRange">Date selected is not in this academic year please reselect a date.</string>
+    <string name="JumpTo">Jump to Day</string>
+    <string name="Settings">Settings</string>
+    <string name="Notifications">Notifications</string>
+    <string name="NotificationsSummary">Notify in status bar of upcoming lectures</string>
+    <string name="NotificationUpdateContent">The university has made a change</string>
+	<string name="Reminders">Lecture Reminders</string>
+    <string name="RemindersSummary">Notifications of upcoming lectures</string>
+    <string name="SmartReminders">Smart Lecture Reminders</string>
+    <string name="SmartRemindersSummary">Use current location to set notification?</string>
+    <string name="Updates">Update Notifications</string>
+    <string name="UpdatesSummary">Notification of changes made to the timetable by the university</string>
+    <string name="NotificationUpdateTicker">Timetable update</string>
+    <string name="NotificationDeleteTitle">An event has been deleted</string>
+    <string name="NotificationAddTitle">An event has been added</string>
+    <string name="NotificationUpdateTitle">An event has been updated</string>
+    <string name="NotificationContent">Tap to view details</string>
+    <string name="NotificationUpdateWarning">\u0020. Would you like to keep this change?</string>
+    <string name="NotificationDeleteWarning">\u0020has been deleted. Would you like to keep this change?</string>
+    <string name="NotificationAddWarning">\u0020has been added. Would you like to keep this change?</string>
+    <string name="automatic_silencing">Automatic Silencing</string>
+    <string name="RSSSpinnerPrompt">Choose news feed</string>
+    <string name="back_button">Back</string>
+    <string name="Today">Today</string>
+    <string name="SelectSubject">Select a subject to view the notes associated with it</string>
+
+    <color name="background">#FFDD00</color>
+    <color name="lightbackground">#FFEE00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#BAABB1</color>
+    <color name="black">#000000</color>
+
+    <dimen name="textView_time_textSize">12dp</dimen>
+    
+    <string name="title_activity_rssreader">RSSReader</string>
+    
+    <string-array name="action_list">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+    </string-array>
+    
+    <string-array name="rss_urls">
+        <item>http://www.bristol.ac.uk/news/news-feed.rss</item>
+        <item>http://www.bristol.ac.uk/news/news-feed.rss?category=research</item>
+        <item>http://www.bristol.ac.uk/news/news-feed.rss?category=grants_and_awards</item>
+        <item>http://www.bristol.ac.uk/news/news-feed.rss?category=press_releases</item>
+        <item>http://www.bristol.ac.uk/news/news-feed.rss?category=centenary</item>
+        <item>http://www.bristol.ac.uk/news/news-feed.rss?category=vc_messages</item>
+        <item>http://www.bristol.ac.uk/news/news-feed.rss?category=obituaries</item>
+        <item>http://www.bristol.ac.uk/news/news-feed.rss?category=staff_notices</item>
+        <item>http://www.bristol.ac.uk/news/news-feed.rss?category=in_the_media</item>
+        <item>http://www.bristol.ac.uk/events/events-rss.xml</item>
+        <item>http://www.bristol.ac.uk/news/news-feed.rss?category=foat</item>
+        <item>http://www.bristol.ac.uk/news/news-feed.rss?category=feng</item>
+        <item>http://www.bristol.ac.uk/news/news-feed.rss?category=fmdy</item>
+        <item>http://www.bristol.ac.uk/news/news-feed.rss?category=fmvs</item>
+        <item>http://www.bristol.ac.uk/news/news-feed.rss?category=fsci</item>
+        <item>http://www.bristol.ac.uk/news/news-feed.rss?category=fssl</item>
+    </string-array>
+    
+    <string-array name="rss_categorys">
+        <item>All News</item>
+        <item>Research</item>
+        <item>Grants and awards</item>
+        <item>Press releases</item>
+        <item>Centenary</item>
+        <item>V-C\'s messages</item>
+        <item>Obituaries</item>
+        <item>Staff Notices</item>
+        <item>In the media</item>
+        <item>Events</item>
+        <item>Faculty of Arts</item>
+        <item>Faculty of Engineering</item>
+        <item>Faculty of Medicine and Dentistry</item>
+        <item>Faculty of Medical and Veterinary Sciences</item>
+        <item>Faculty of Science</item>
+        <item>Faculty of Social Sciences and Law</item>
+    </string-array>
+    
+    <string-array name="volume_options">
+        <item>Off</item>
+        <item>Silent</item>
+        <item>Vibrate</item>
+    </string-array>
+    
+    <string name="volume_default">0</string>
+	<string name="DialogAddNotes">Are you sure you want to associate these notes?</string>
+    <string name="AddNotes">Add Lecture Notes</string>
+    <string name="OpenNotes">Open Lecture Notes</string>
+	<string name="Progress">Progress</string>
+    <string name="title_activity_progress">Attendance Progress</string>
+    <string name="description_activity_progress">Mark lectures on your timetable with green (attendance) or red (absence) so that you can start to see your stats here!</string>
+    <string name="MissingInformation">Unit not saved:\nPlease ensure all details are given and try again.</string>
+    <string name="ResetInfo">Reset</string>
+    <string name="LecturerName">Lecturer Name:</string>
+    <string name="UnitDirector">Unit Director:</string>
+	<string name="Notes">Notes</string>
+    <string name="choose_subject">Choose Subject</string>
+    <string name="choose_note">Choose Note</string>
+    <string name="UnitInformation">Unit Information:</string>
+    <color name="scheme1_light">#44BFC4</color>
+    <color name="scheme1_dark">#12858A</color>
+    <color name="scheme1_darkgrey">#333333</color>
+    <color name="scheme1_darkgrey2">#555555</color>
+    <color name="scheme1_mediumgrey">#666666</color>
+    <color name="scheme1_mediumgrey2">#888888</color>
+    <color name="scheme1_secondary">#14A44E</color>
+    <color name="scheme1_secondary_light">#48D27F</color>
+    <color name="scheme1_tertiary">#E4781C</color>
+    <color name="scheme1_tertiary_light">#F29C52</color>
+    <color name="scheme1_4">#9A1DC3</color>
+    <color name="scheme1_4_light">#BE51E1</color>
+    <color name="lightgrey">#E7E7E7</color>
+    <color name="lightgrey2">#D0D0D0</color>
+    <color name="lightgrey3">#BBBBBB</color>
+    <string name="SetAllAsAttended">Set all as attended</string>
+    <string name="SetAllMessage">Set all unmarked lectures as attended? Lectures marked as missed will not change.</string>
+    <string name="SetAllButton1">For all time</string>
+    <string name="SetAllButton2">Up until now</string>
+    <string name="SetAllButton3">Cancel</string>
+
+</resources>

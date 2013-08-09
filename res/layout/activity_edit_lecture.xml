@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ScrollView
+        android:id="@+id/lecture_page_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/lecture_buttons" >
+     	
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+	
+		   <TextView
+		       android:id="@+id/lecture_unit_code"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_alignParentLeft="true"
+		       android:layout_alignParentTop="true"
+		       android:textSize="18sp" />
+		   
+		   <TextView
+		       android:id="@+id/lecture_unit_name"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_alignParentTop="true"
+			   android:layout_toRightOf="@+id/lecture_unit_code"
+		       android:textSize="18sp" />
+
+		   <View
+		    android:layout_width="fill_parent"
+		       android:layout_height="2dp"
+		       android:layout_marginBottom="10dp"
+		       android:layout_marginTop="10dp"
+		       android:background="@color/background"
+		    android:id="@+id/separator2"
+		   	android:layout_below="@+id/lecture_unit_name"/>
+
+		   <TextView
+		       android:id="@+id/lecture_typelabel"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_alignParentLeft="true"
+		       android:layout_below="@+id/separator2"
+		       android:text="@string/Type"
+		       android:textSize="18sp" />
+		   
+		    <Spinner
+		       android:id="@+id/spinner2"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_alignParentLeft="true"
+		       android:layout_below="@+id/lecture_typelabel" />
+		
+		   <View
+		    android:layout_width="fill_parent"
+		       android:layout_height="2dp"
+		       android:layout_marginBottom="10dp"
+		       android:layout_marginTop="10dp"
+		       android:background="@color/background"
+		    android:id="@+id/separator4"
+		   	android:layout_below="@+id/spinner2"/>
+		   		   
+	   	   <TextView
+		       android:id="@+id/unit_director_label"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_alignParentLeft="true"
+		       android:layout_below="@+id/separator4"
+		       android:text="@string/UnitDirector"
+		       android:textSize="18sp" />
+		   
+		   <EditText
+		       android:id="@+id/enter_unit_director"
+		       android:layout_width="match_parent"
+		       android:layout_height="wrap_content"
+		       android:layout_alignParentLeft="true"
+		       android:inputType="textCapSentences"
+		       android:layout_below="@+id/unit_director_label" />
+		   
+	   	   <View
+		   	   android:layout_width="fill_parent"
+		       android:layout_height="2dp"
+		       android:layout_marginBottom="10dp"
+		       android:layout_marginTop="10dp"
+		       android:background="@color/background"
+		       android:id="@+id/separator3"
+		   	   android:layout_below="@+id/enter_unit_director"/>
+		
+
+		   <TextView
+		       android:id="@+id/lecture_addresslabel"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_alignParentLeft="true"
+		       android:layout_below="@+id/separator3"
+		       android:text="@string/Address"
+		       android:textSize="18sp" />
+		   
+		    <Spinner
+		       android:id="@+id/spinner3"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_alignParentLeft="true"
+		       android:layout_below="@+id/lecture_addresslabel" />
+		   		   
+		</RelativeLayout>
+		
+    </ScrollView>
+    
+    <LinearLayout android:id="@+id/lecture_buttons"
+		       android:layout_width="fill_parent"
+		   	android:layout_height="wrap_content"
+		   	android:layout_alignParentBottom="true"
+		    	android:orientation="horizontal"
+		   	style="@android:style/ButtonBar">
+		       
+		       <Button
+		        android:id="@+id/saveButton"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:onClick="saveEdits"
+		        android:text="@string/Save" />
+		       	
+		    <Button
+		        android:id="@+id/deleteButton"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:onClick="deleteLecture"
+		        android:visibility="gone"
+		        android:text="@string/Delete" />
+		    
+	        <Button
+		        android:id="@+id/restoreButton"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:onClick="restoreLecture"
+		        android:visibility="gone"
+		        android:text="@string/Restore" />
+		    
+		</LinearLayout>
+		   
+</RelativeLayout>

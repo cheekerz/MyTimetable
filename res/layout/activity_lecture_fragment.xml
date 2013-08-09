@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/lecture_namelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/Name"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/lecture_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lecture_namelabel"
+        android:inputType="textCapSentences"
+        android:hint="@string/LectureNameHint">
+
+        <requestFocus />
+    </EditText>
+    
+    <View
+        android:id="@+id/separator1"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/lecture_name"
+        android:layout_height="2dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/background" />
+    
+    <TextView
+        android:id="@+id/lecture_unitcodelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/separator1"
+        android:text="@string/UnitCode"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/lecture_unitcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapCharacters"
+        android:hint="@string/LectureUnitCodeHint"
+        android:layout_below="@+id/lecture_unitcodelabel" />
+    
+    
+    <View
+	    android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/background"
+	    android:id="@+id/separator2"
+    	android:layout_below="@+id/lecture_unitcode"/>
+
+    <TextView
+        android:id="@+id/lecture_typelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/separator2"
+        android:text="@string/Type"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/lecture_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:inputType="textCapSentences"
+        android:hint="@string/LectureTypeHint"
+        android:layout_below="@+id/lecture_typelabel" />
+    
+    
+    <View
+	    android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/background"
+	    android:id="@+id/separator3"
+    	android:layout_below="@+id/lecture_type"/>
+    
+    <TextView
+        android:id="@+id/lecture_shortaddresslabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/separator3"
+        android:text="@string/ShortAddress"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/lecture_shortaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:inputType="textCapSentences"
+        android:hint="@string/LectureShortAddressHint"
+        android:layout_below="@+id/lecture_shortaddresslabel" />
+    
+    
+    <View
+	    android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/background"
+	    android:id="@+id/separator4"
+    	android:layout_below="@+id/lecture_shortaddress"/>
+    
+    <TextView
+        android:id="@+id/lecture_addresslabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/separator4"
+        android:text="@string/Address"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/lecture_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:inputType="textMultiLine"
+        android:hint="@string/LectureAddressHint"
+        android:layout_below="@+id/lecture_addresslabel" />
+    
+    <LinearLayout android:id="@+id/lecture_buttons"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentBottom="true"
+     	android:orientation="horizontal"
+    	style="@android:style/ButtonBar">
+        
+        <Button
+	        android:id="@+id/saveButton"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:onClick="saveLecture"
+	        android:text="@string/Save" />
+        	
+	    <Button
+	        android:id="@+id/deleteButton"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:onClick="deleteLecture"
+	        android:visibility="gone"
+	        android:text="@string/Delete" />
+	    
+	    <Button
+	        android:id="@+id/addNotesButton"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:onClick="startViewFiles"
+	       android:visibility="gone"
+	        android:text="@string/AddNotes" />
+	    
+	    <Button
+	        android:id="@+id/openNotesButton"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:onClick="openNotes"
+	        android:visibility="gone"
+	        android:text="@string/OpenNotes" />
+	    
+	</LinearLayout>
+
+</RelativeLayout>

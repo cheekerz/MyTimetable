@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <ListPreference
+        android:key="volume"
+        android:summary="%s"
+        android:title="@string/automatic_silencing"
+        android:dialogTitle="@string/automatic_silencing"
+        android:entries="@array/volume_options"
+        android:entryValues="@array/volume_options"
+        android:defaultValue="@string/volume_default" />
+
+    <CheckBoxPreference
+        android:key="reminder"
+        android:title="@string/Reminders"
+        android:summary="@string/RemindersSummary"
+        android:defaultValue="true" />
+    
+    <CheckBoxPreference
+        android:key="smart_reminder"
+        android:title="@string/SmartReminders"
+        android:summary="@string/SmartRemindersSummary"
+		android:defaultValue="false" />
+
+</PreferenceScreen>

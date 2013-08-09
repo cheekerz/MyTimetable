@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.px.MyTimetable"
+    android:versionCode="1"
+    android:versionName="1.0" >
+	<uses-permission android:name="android.permission.READ_CALENDAR"/>
+	<uses-permission android:name="android.permission.WRITE_CALENDAR"/>  
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+	<uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+   
+    <application
+        android:allowBackup="true"
+        android:name="com.px.MyTimetable.Main.TimetableAccess"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="com.px.MyTimetable.Main.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.px.MyTimetable.TimetablePage.DaySelector"
+            android:label="@string/Timetable"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.px.mytimetable.main" />
+        </activity>
+        <activity
+            android:name="com.px.MyTimetable.Progress.MyTimetableProgress"
+            android:label="@string/Progress"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.px.MyTimetable.TimetablePage.LecturePage"
+            android:label="@string/CreateLecture"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.px.MyTimetable.TimetablePage.CreateLecture"
+            android:label="@string/CreateLecture"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.px.MyTimetable.TimetablePage.CreateUnit"
+            android:label="@string/CreateLecture"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.px.MyTimetable.TimetablePage.CreatePlace"
+            android:label="@string/CreateLecture"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.px.MyTimetable.TimetablePage.EditLecture"
+            android:label="@string/CreateLecture"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.px.MyTimetable.RSSReader.RSSFragment"
+            android:label="@string/app_name" >
+        </activity>
+        
+	<activity
+            android:name="com.px.MyTimetable.FileChooser.FileChooser"
+            android:label="@string/app_name" >
+        </activity>
+        
+		<activity
+		    android:name="com.px.MyTimetable.Notes.ViewNotes"
+		    android:label="@string/app_name" >
+        </activity>
+
+        <activity android:name="com.px.MyTimetable.RSSReader.RSSDescription" >
+        </activity>
+        
+        <activity
+            android:name="com.px.MyTimetable.RSSReader.RSSReader"
+            android:label="@string/title_activity_rssreader" >
+        </activity>
+        
+        <activity
+            android:name="com.px.MyTimetable.Settings.MyTimetableSettings"
+            android:label="@string/Settings">
+        </activity>
+        
+        <activity
+            android:name="com.px.MyTimetable.Data.CalendarWarning"
+    		android:launchMode="singleTask"
+    		android:taskAffinity=""
+            android:excludeFromRecents="true">
+        </activity>
+		
+        <service android:name= "com.px.MyTimetable.Service.NotificationService" />
+        
+        <receiver android:name = "com.px.MyTimetable.Service.NotificationSchedule" />
+        
+        <receiver android:name = "com.px.MyTimetable.Service.ServiceStart" />
+        
+	    <receiver android:name="com.px.MyTimetable.Main.UpdateTimetable"/>
+	    
+		<receiver android:name="com.px.MyTimetable.Widget.NextLectureWidgetProvider">
+		    <intent-filter>
+		        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+		    </intent-filter>
+
+		    <meta-data android:name="android.appwidget.provider"
+		               android:resource="@xml/widgetproviderinfo" />
+		</receiver>
+    </application>
+
+</manifest>
